@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title > <img src="https://static.vecteezy.com/system/resources/previews/020/869/997/non_2x/health-medical-logo-template-vector.jpg" alt="">
+        <h1 id="title">Sabine Hospital - Advanced Healthcare</h1></title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Joan&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-info">
+                <div class="contact-info">
+                    <a href="tel:1-800-SABINE"><i class="fas fa-phone-alt"></i> Emergency: 1-800-SABINE</a>
+                    <a href="mailto:info@sabinehospital.com"><i class="fas fa-envelope"></i> info@sabinehospital.com</a>
+                </div>
+                <div class="logo-center">
+                    <!-- Optional: Add image logo before text -->
+                    <img src="https://png.pngtree.com/png-clipart/20230427/original/pngtree-medical-logo-png-image_9116167.png" style="filter: grayscale(100%) brightness(1.2) contrast(1.1);" alt="Sabine Logo" class="sabine-logo">
+                    <h1>SABINE</h1>
+                </div>
+                <div class="top-right">
+                    <a href="#" class="btn-appointment">Book Appointment</a>
+                    <div class="language-select">
+                        <select>
+                            <option>English</option>
+                            <option>Malayalam</option>
+                            <option>Hindi</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <style>
+    .top-bar {
+        background-color: #2d2d2d;
+        padding: 10px 0;
+        color: #fff;
+    }
+    
+    .top-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    
+    .contact-info {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+    
+    .contact-info a {
+        color: #fff;
+        font-size: 14px;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    
+    .contact-info a:hover {
+        color: #fcfeff;
+    }
+    
+    .logo-center {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .logo-center h1 {
+        font-size: 32px;
+        font-weight: 800;
+        color: #fff;
+        letter-spacing: 1px;
+    }
+    
+    .sabine-logo {
+        height: 40px;
+    }
+    
+    .top-right {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .btn-appointment {
+        background-color: #ffffff;
+        padding: 8px 11px;
+        border-top: #2d2d2d;
+        display: flex;
+        text-align: center;
+        margin-top: 18px;
+        border-radius: 20px;
+        color: #000000;
+        text-decoration: none;
+        font-weight: 600;
+        transition: background-color 0.3s;
+    }
+    
+    .btn-appointment:hover {
+        background-color: #6d6d6d;
+    }
+    
+    .language-select select {
+        padding: 5px 10px;
+        border-radius: 4px;
+        border: none;
+        outline: none;
+        font-size: 14px;
+    }
+    </style>
+    
+
+    <header class="main-header">
+        <nav>
+            <div class="logo">
+                <h1>Sabine Hospital</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li class="dropdown">
+                    <a href="#services">Services <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#cardiology">Cardiology</a>
+                        <a href="#neurology">Neurology</a>
+                        <a href="#orthopedics">Orthopedics</a>
+                        <a href="#pediatrics">Pediatrics</a>
+                    </div>
+                </li>
+                <li><a href="#doctors">Doctors</a></li>
+                <li><a href="#facilities">Facilities</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="#" class="search-btn"><i class="fas fa-search"></i></a>
+                <a href="#" class="emergency-btn"><i class="fas fa-ambulance"></i> Emergency</a>
+            </div>
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay">
+        <div class="search-content">
+            <button class="close-search"><i class="fas fa-times"></i></button>
+            <form class="search-form">
+                <input type="text" placeholder="Search doctors, departments, services...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <section id="home" class="hero">
+        <div class="hero-slider swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1538108149393-fbbd81895907?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80')">
+                    <div class="hero-content">
+                        <h1 data-aos="fade-up">Advanced Healthcare for Your Family</h1>
+                        <p data-aos="fade-up" data-aos-delay="200">Leading the way in medical excellence</p>
+                        <div class="hero-btns" data-aos="fade-up" data-aos-delay="400">
+                            <a href="#appointment" class="btn-primary">Book Appointment</a>
+                            <a href="#services" class="btn-secondary">Our Services</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80')">
+                    <div class="hero-content">
+                        <h1>State-of-the-Art Medical Facilities</h1>
+                        <p>Equipped with the latest technology for better care</p>
+                        <div class="hero-btns">
+                            <a href="#facilities" class="btn-primary">Our Facilities</a>
+                            <a href="#virtual-tour" class="btn-secondary">Virtual Tour</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Expert Doctors</h3>
+                    <p>World-class healthcare professionals</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>24/7 Service</h3>
+                    <p>Round-the-clock medical assistance</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <h3>Modern Facilities</h3>
+                    <p>Latest medical equipment</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-ambulance"></i>
+                    </div>
+                    <h3>Emergency Care</h3>
+                    <p>Immediate medical attention</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Our Services</h2>
+                <p>Comprehensive Healthcare Solutions</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Cardiology</h3>
+                    <p>Expert cardiac care with state-of-the-art facilities</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Heart Disease Treatment</li>
+                        <li><i class="fas fa-check"></i> Cardiac Surgery</li>
+                        <li><i class="fas fa-check"></i> Heart Rhythm Disorders</li>
+                    </ul>
+                    <a href="#cardiology" class="btn-service">Learn More</a>
+                </div>
+                <!-- More service cards with similar structure -->
+            </div>
+        </div>
+    </section>
+
+    <section id="stats" class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="fade-up">
+                    <div class="stat-number" data-count="50000">0</div>
+                    <p>Patients Treated</p>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-number" data-count="200">0</div>
+                    <p>Specialist Doctors</p>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-number" data-count="50">0</div>
+                    <p>Years of Excellence</p>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-number" data-count="98">0</div>
+                    <p>Success Rate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="appointment" class="appointment">
+        <div class="container">
+            <div class="appointment-grid">
+                <div class="appointment-content" data-aos="fade-right">
+                    <h1>Book an Appointment</h1>
+                    <p>Schedule your visit with our specialists</p>
+                    <div class="appointment-features">
+                        <div class="feature">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Easy Scheduling</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <span>Flexible Timing</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-user-md"></i>
+                            <span>Expert Consultation</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="appointment-form" data-aos="fade-left">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <input type="text" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Select Department</option>
+                                <option value="cardiology">Cardiology</option>
+                                <option value="neurology">Neurology</option>
+                                <option value="orthopedics">Orthopedics</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Preferred Time</option>
+                                <option value="morning">Morning</option>
+                                <option value="afternoon">Afternoon</option>
+                                <option value="evening">Evening</option>
+                            </select>
+                        </div>
+                    </div>
+                    <textarea placeholder="Additional Notes"></textarea>
+                    <button type="submit" class="btn-submit">Book Appointment</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="doctors" class="doctors">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Our Expert Doctors</h2>
+                <p>Meet Our Team of Specialists</p>
+            </div>
+            <div class="doctors-slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="doctor-card" data-aos="fade-up">
+                            <div class="doctor-img">
+                                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Dr. Sarah Johnson">
+                                <div class="doctor-overlay">
+                                    <div class="doctor-contact">
+                                        <a href="#" class="btn-appointment">Book Appointment</a>
+                                        <div class="doctor-social">
+                                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="doctor-info">
+                                <h3>Dr. Sarah Johnson</h3>
+                                <p class="doctor-speciality">Cardiologist</p>
+                                <div class="doctor-details">
+                                    <p><i class="fas fa-graduation-cap"></i> MD - Cardiology</p>
+                                    <p><i class="fas fa-hospital"></i> 15+ Years Experience</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- More doctor slides -->
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Patient Testimonials</h2>
+                <p>What Our Patients Say</p>
+            </div>
+            <div class="testimonials-slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-card" data-aos="fade-up">
+                            <div class="testimonial-content">
+                                <i class="fas fa-quote-left"></i>
+                                <p>"Exceptional care and professional staff. The doctors were very attentive and explained everything clearly."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Patient">
+                                <div class="author-info">
+                                    <h4>Jane Cooper</h4>
+                                    <p>Cardiac Patient</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- More testimonial slides -->
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-section">
+                        <h3>About Sabine Hospital</h3>
+                        <p>Leading healthcare provider committed to delivering exceptional medical services with compassion and care.</p>
+                        <div class="footer-contact">
+                            <p><i class="fas fa-phone"></i> Emergency: 1-800-SABINE</p>
+                            <p><i class="fas fa-envelope"></i> info@sabinehospital.com</p>
+                            <p><i class="fas fa-map-marker-alt"></i> 123 Medical Center Drive</p>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#services">Our Services</a></li>
+                            <li><a href="#doctors">Our Doctors</a></li>
+                            <li><a href="#appointment">Book Appointment</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#cardiology">Cardiology</a></li>
+                            <li><a href="#neurology">Neurology</a></li>
+                            <li><a href="#orthopedics">Orthopedics</a></li>
+                            <li><a href="#pediatrics">Pediatrics</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Connect With Us</h3>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="newsletter">
+                            <h4>Subscribe to Newsletter</h4>
+                            <form class="newsletter-form">
+                                <input type="email" placeholder="Your email address">
+                                <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Sabine Hospital. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-buttons">
+        <a href="#appointment" class="float-btn appointment-float">
+            <i class="fas fa-calendar-check"></i>
+            <span>Book Appointment</span>
+        </a>
+        <a href="tel:1-800-SABINE" class="float-btn emergency-float">
+            <i class="fas fa-phone-alt"></i>
+            <span>Emergency</span>
+        </a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
